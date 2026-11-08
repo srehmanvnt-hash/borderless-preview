@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Travel with Clarity — Borderless Health</title>
+<meta name="description" content="Honest, practical guidance on getting to your destination — visa requirements by citizenship and residence, language support, and regional and global hubs side by side." />
+<style>
+:root{--ivory:#FBF8F4;--sage:#6B8F71;--sage-dark:#5A7C60;--sage-soft:#E4EDE5;--coral:#E88C7D;--coral-dark:#C96E60;--coral-soft:#FBEAE6;--ink:#1F2A24;--muted:#5E6B63;--white:#FFFFFF;--radius:20px;--shadow:0 8px 30px rgba(31,42,36,0.07)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--ivory);line-height:1.7;font-size:17px}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:600;line-height:1.25;color:var(--ink)}
+a{color:var(--sage);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+header{background:rgba(251,248,244,0.92);backdrop-filter:blur(10px);position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(31,42,36,0.06)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:18px;padding-bottom:18px;flex-wrap:wrap;gap:12px}
+.logo{font-family:Georgia,serif;font-weight:600;font-size:1.25rem;color:var(--ink);text-decoration:none}.logo span{color:var(--sage)}
+nav a{color:var(--ink);margin-left:22px;font-size:.95rem;opacity:.8}nav a:hover{opacity:1;color:var(--sage);text-decoration:none}nav a.active{color:var(--sage);opacity:1;font-weight:600}
+
+.hero-small{padding:88px 0 60px;text-align:center;background:radial-gradient(circle at 15% 20%,rgba(107,143,113,0.10),transparent 45%),radial-gradient(circle at 85% 10%,rgba(232,140,125,0.10),transparent 45%),var(--ivory)}
+.hero-small h1{font-size:2.8rem;max-width:860px;margin:0 auto 18px}
+.hero-small p{font-size:1.15rem;color:var(--muted);max-width:680px;margin:0 auto}
+
+section{padding:80px 0}.alt{background:var(--white)}
+h2{font-size:2rem;margin-bottom:14px}
+.lead{color:var(--muted);font-size:1.08rem;max-width:720px;margin-bottom:32px}
+
+.identity-block{background:var(--white);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);border:1px solid rgba(31,42,36,0.05);margin-bottom:24px}
+.identity-block h3{font-size:1.05rem;margin-bottom:4px;color:var(--ink)}
+.identity-block .hint{font-size:.86rem;color:var(--muted);margin-bottom:16px}
+.identity-row{display:grid;grid-template-columns:1fr 1fr auto;gap:10px;align-items:end;margin-bottom:10px}
+.identity-row label{display:block;font-size:.78rem;font-weight:600;color:var(--sage-dark);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+.identity-row select{width:100%;padding:11px 14px;border-radius:10px;border:1px solid rgba(31,42,36,0.15);font:inherit;background:#fff;color:var(--ink)}
+.identity-remove{background:transparent;border:1px solid rgba(31,42,36,0.15);color:var(--muted);width:38px;height:38px;border-radius:10px;cursor:pointer;font-size:1.1rem;line-height:1}
+.identity-remove:hover{background:var(--coral-soft);color:var(--coral-dark);border-color:var(--coral)}
+.identity-add{background:var(--sage-soft);color:var(--sage-dark);border:none;padding:10px 18px;border-radius:999px;font-weight:600;font-size:.88rem;cursor:pointer;margin-top:8px;font-family:inherit}
+.identity-add:hover{background:var(--sage);color:#fff}
+.identity-summary{margin-top:14px;padding-top:14px;border-top:1px dashed rgba(31,42,36,0.10);font-size:.86rem;color:var(--muted);line-height:1.6}
+.identity-summary strong{color:var(--ink)}
+
+.passport-sort{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.sort-chip{background:var(--white);border:1px solid rgba(31,42,36,0.10);padding:8px 16px;border-radius:999px;font-size:.88rem;color:var(--muted);cursor:pointer;transition:all .15s;font-family:inherit}
+.sort-chip.active{background:var(--sage);color:#fff;border-color:var(--sage)}
+.sort-chip:hover:not(.active){background:var(--sage-soft);color:var(--sage-dark)}
+
+.passport-layout{display:grid;grid-template-columns:1.1fr 1fr;gap:32px;align-items:start}
+.passport-map-card{background:var(--white);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);border:1px solid rgba(31,42,36,0.05)}
+.passport-map-card svg{width:100%;height:auto;display:block}
+.map-legend{display:flex;gap:20px;flex-wrap:wrap;margin-top:14px;font-size:.78rem;color:var(--muted)}
+.map-legend span{display:inline-flex;align-items:center;gap:6px}
+.legend-dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+.legend-dot.regional{background:var(--coral)}
+.legend-dot.global{background:var(--sage)}
+.legend-dot.home{background:var(--ink)}
+
+.passport-list{display:flex;flex-direction:column;gap:14px;max-height:620px;overflow-y:auto;padding-right:6px}
+.dest-card{background:var(--white);border-radius:16px;padding:20px;box-shadow:var(--shadow);border:1px solid rgba(31,42,36,0.05);transition:transform .15s}
+.dest-card:hover{transform:translateY(-2px)}
+.dest-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:10px}
+.dest-name{font-family:Georgia,serif;font-size:1.15rem;color:var(--ink);font-weight:600}
+.dest-tier{font-size:.72rem;font-weight:600;padding:3px 10px;border-radius:999px;text-transform:uppercase;letter-spacing:.4px;white-space:nowrap}
+.dest-tier.regional{background:var(--coral-soft);color:var(--coral-dark)}
+.dest-tier.global{background:var(--sage-soft);color:var(--sage-dark)}
+.dest-meta{display:flex;flex-wrap:wrap;gap:10px 16px;font-size:.82rem;color:var(--muted);margin-bottom:10px}
+.dest-meta b{color:var(--ink);font-weight:600}
+.dest-note{font-size:.88rem;color:var(--muted);line-height:1.5}
+
+.visa-badge{display:inline-block;font-size:.75rem;padding:3px 10px;border-radius:999px;font-weight:600}
+.visa-free{background:#E4F2E8;color:#2E7A48}
+.visa-arrival{background:var(--sage-soft);color:var(--sage-dark)}
+.visa-evisa{background:var(--coral-soft);color:var(--coral-dark)}
+.visa-embassy{background:#F0E4E6;color:#8B4653}
+
+.passport-route{font-size:.8rem;color:var(--sage-dark);background:var(--sage-soft);padding:6px 10px;border-radius:8px;margin-top:8px;line-height:1.5}
+.passport-route .via{font-weight:600}
+
+.compare-box{background:linear-gradient(135deg,var(--coral-soft),var(--ivory));border-radius:var(--radius);padding:32px 36px;margin-top:36px;border:1px solid rgba(232,140,125,0.20)}
+.compare-box h3{font-size:1.3rem;margin-bottom:12px;color:var(--ink)}
+.compare-box p{color:var(--muted);margin-bottom:16px;font-size:.98rem}
+.compare-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:20px}
+.compare-option{background:var(--white);border-radius:12px;padding:16px;border:1px solid rgba(31,42,36,0.06)}
+.compare-option h4{font-family:Georgia,serif;font-size:1rem;margin-bottom:8px;color:var(--ink)}
+.compare-option p{font-size:.85rem;margin-bottom:0;color:var(--muted)}
+.compare-option .tagline{font-size:.78rem;color:var(--coral-dark);font-weight:600;margin-bottom:6px}
+
+.passport-note{font-size:.82rem;color:var(--muted);margin-top:20px;padding-top:20px;border-top:1px solid rgba(31,42,36,0.08);line-height:1.6}
+
+footer{background:var(--ink);color:#A9B5AD;padding:56px 0 32px;font-size:.92rem}footer a{color:#C6D2CA}
+.footer-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;margin-bottom:32px}
+footer strong{color:#fff;display:block;margin-bottom:10px;font-family:Georgia,serif;font-weight:600}
+.footer-legal{border-top:1px solid rgba(255,255,255,0.08);padding-top:24px;font-size:.82rem;color:#7E8C84;line-height:1.6}
+
+@media(max-width:900px){.passport-layout{grid-template-columns:1fr}.passport-list{max-height:none}}
+@media(max-width:640px){.hero-small h1{font-size:2rem}h2{font-size:1.7rem}nav a{margin-left:0;margin-right:14px;font-size:.88rem}.compare-box{padding:24px 20px}.identity-row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="index.html">Borderless <span>Health</span></a>
+    <nav>
+      <a href="care-abroad.html">Care abroad</a>
+      <a href="travel-with-clarity.html" class="active">Travel with Clarity</a>
+      <a href="wellness.html">Wellness</a>
+      <a href="free-will.html">Free will</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero-small">
+  <div class="wrap">
+    <h1>Travel with Clarity</h1>
+    <p>Honest, practical guidance on getting to your destination. Tell us about your citizenship(s) and where you live, and we'll show you which countries you can reach easily, which need a visa, and which hubs may suit your needs best. No pass, no promise — just clear information and help with the process.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="identity-block">
+      <h3>About you</h3>
+      <p class="hint">Many people hold more than one passport, or live in a country they weren't born in. We use whichever route gives you the easiest, most fuss-free access — and show you which one.</p>
+
+      <div id="citizenship-list">
+        <div class="identity-row">
+          <div>
+            <label>Citizenship</label>
+            <select class="citizenship-select">
+              <option value="">Select a country</option>
+              <option>Pakistan</option><option>India</option><option>Bangladesh</option>
+              <option>Nigeria</option><option>United Kingdom</option><option>United States</option>
+              <option>Canada</option><option>Australia</option><option>United Arab Emirates</option>
+              <option>Singapore</option><option>Brazil</option><option>South Africa</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <button type="button" class="identity-add" id="add-citizenship">+ Add another citizenship</button>
+
+      <div class="identity-row" style="margin-top:20px">
+        <div>
+          <label>Country of residence</label>
+          <select id="residence-select">
+            <option value="">Same as first citizenship</option>
+            <option>Pakistan</option><option>India</option><option>Bangladesh</option>
+            <option>Nigeria</option><option>United Kingdom</option><option>United States</option>
+            <option>Canada</option><option>Australia</option><option>United Arab Emirates</option>
+            <option>Singapore</option><option>Brazil</option><option>South Africa</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="identity-row" style="margin-top:14px">
+        <div style="grid-column:1 / -1">
+          <label>Type of care</label>
+          <select id="care-select">
+            <option value="complex">Complex surgery / cancer care</option>
+            <option value="consult">Specialist consultation</option>
+            <option value="genomics">Genomic sequencing</option>
+            <option value="wellness">Wellness &amp; recovery</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="identity-summary" id="identity-summary">
+        <strong>How we'll search:</strong> we'll check each destination against every passport you hold and where you live, and show the easiest route for each.
+      </div>
+    </div>
+
+    <div class="passport-sort" aria-label="Sort destinations">
+      <button class="sort-chip active" type="button" data-sort="access">Fuss-free first</button>
+      <button class="sort-chip" type="button" data-sort="distance">Nearest first</button>
+      <button class="sort-chip" type="button" data-sort="fit">Best-fit hubs</button>
+    </div>
+
+    <div class="passport-layout">
+      <div class="passport-map-card">
+        <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="World map with care hubs">
+          <rect width="800" height="400" fill="#EAF1EA" rx="12"/>
+          <g fill="#FFFFFF" opacity="0.9" stroke="#C9DCCB" stroke-width="0.6">
+            <path d="M60,90 L140,80 L180,110 L200,150 L180,200 L140,220 L110,200 L90,170 L60,140 Z"/>
+            <path d="M140,220 L170,230 L175,255 L155,255 L145,240 Z"/>
+            <path d="M175,255 L215,270 L235,320 L215,360 L185,345 L165,305 L160,275 Z"/>
+            <path d="M360,110 L410,100 L430,120 L420,150 L390,160 L365,145 L350,125 Z"/>
+            <path d="M370,170 L420,165 L450,200 L440,260 L410,300 L385,290 L370,250 L355,205 Z"/>
+            <path d="M435,155 L470,150 L485,175 L465,195 L440,185 Z"/>
+            <path d="M470,100 L560,90 L640,110 L680,140 L660,175 L600,185 L540,175 L500,155 L475,140 Z"/>
+            <path d="M520,175 L555,175 L560,210 L540,230 L515,215 L510,195 Z"/>
+            <path d="M595,195 L625,195 L645,215 L635,240 L610,235 L595,220 Z"/>
+            <path d="M600,150 L665,150 L680,175 L660,195 L620,190 L600,175 Z"/>
+            <path d="M690,160 L705,158 L712,175 L700,185 L688,178 Z"/>
+            <path d="M645,290 L700,285 L725,305 L715,340 L675,350 L645,330 Z"/>
+            <path d="M745,340 L755,338 L758,355 L748,358 Z"/>
+          </g>
+          <g stroke="#A8C9AE" stroke-width="1.2" fill="none" opacity="0.7" stroke-dasharray="3 4">
+            <path d="M535,205 Q560,180 580,205"/>
+            <path d="M535,205 Q550,155 660,165"/>
+            <path d="M535,205 Q530,150 405,135"/>
+            <path d="M535,205 Q560,230 600,215"/>
+            <path d="M535,205 Q570,260 690,300"/>
+          </g>
+          <g id="map-home">
+            <circle cx="535" cy="205" r="7" fill="#1F2A24"/>
+            <circle cx="535" cy="205" r="2.5" fill="#FFFFFF"/>
+            <text x="545" y="200" font-family="system-ui,sans-serif" font-size="9" fill="#1F2A24" font-weight="600">You</text>
+          </g>
+          <g font-family="system-ui,sans-serif" font-size="9" fill="#5E6B63">
+            <circle cx="470" cy="175" r="5.5" fill="#E88C7D" stroke="#C96E60" stroke-width="1.2"/>
+            <text x="452" y="167">UAE</text>
+            <circle cx="600" cy="215" r="5.5" fill="#E88C7D" stroke="#C96E60" stroke-width="1.2"/>
+            <text x="588" y="232">Thailand</text>
+            <circle cx="628" cy="225" r="5.5" fill="#E88C7D" stroke="#C96E60" stroke-width="1.2"/>
+            <text x="620" y="245">Singapore</text>
+            <circle cx="420" cy="135" r="5.5" fill="#E88C7D" stroke="#C96E60" stroke-width="1.2"/>
+            <text x="392" y="128">Türkiye</text>
+            <circle cx="185" cy="150" r="5.5" fill="#E88C7D" stroke="#C96E60" stroke-width="1.2"/>
+            <text x="152" y="143">United States</text>
+          </g>
+          <g font-family="system-ui,sans-serif" font-size="9" fill="#5A7C60">
+            <circle cx="395" cy="125" r="6.5" fill="#6B8F71"/>
+            <text x="400" y="118">UK</text>
+            <circle cx="705" cy="170" r="6" fill="#6B8F71"/>
+            <text x="700" y="158">Japan</text>
+            <circle cx="680" cy="160" r="6" fill="#6B8F71"/>
+            <text x="655" y="148">S. Korea</text>
+          </g>
+        </svg>
+        <div class="map-legend">
+          <span><span class="legend-dot home"></span> You are here</span>
+          <span><span class="legend-dot regional"></span> Regional hub</span>
+          <span><span class="legend-dot global"></span> Global hub</span>
+        </div>
+      </div>
+
+      <div class="passport-list" id="passport-list"></div>
+    </div>
+
+    <div class="compare-box">
+      <h3>A real question we hear often: "UK, South Korea or Thailand?"</h3>
+      <p>Here's the same case laid out plainly. There isn't one right answer — the right answer is the one that fits your passport, your energy, your language and your budget.</p>
+      <div class="compare-options">
+        <div class="compare-option">
+          <div class="tagline">Hardest access, highest ceiling</div>
+          <h4>United Kingdom</h4>
+          <p>Embassy visa · 10h flight · highest cost tier · deepest specialist expertise. Usually the right choice for very complex cases, and the wrong choice if the wait is too long.</p>
+        </div>
+        <div class="compare-option">
+          <div class="tagline">Strong alternative, shorter flight</div>
+          <h4>South Korea</h4>
+          <p>e-Visa · 11h flight · mid cost tier · advanced oncology and surgical programs. Good for patients who want a high ceiling without a Western wait.</p>
+        </div>
+        <div class="compare-option">
+          <div class="tagline">Easiest access, gentlest pace</div>
+          <h4>Thailand</h4>
+          <p>Visa on arrival · 6h flight · low cost tier · strong private hospitals with English-speaking teams. Often the right choice for second opinions and less complex treatments.</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="passport-note">
+      <strong>Please note:</strong> Destinations and visa status shown here are indicative, not a guarantee. Visa rules change, and so do costs. The routes shown are the most favourable for the citizenships and residence selected — we confirm every requirement with you personally before any travel or booking, and if a route we've shown isn't right for you, we'll say so.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-cols">
+      <div>
+        <div class="logo" style="color:#fff">Borderless <span style="color:#A5C4AB">Health</span></div>
+        <p style="margin-top:8px">Calm, verified care, wherever you are.</p>
+      </div>
+      <div>
+        <strong>Services</strong>
+        <a href="care-abroad.html">Care abroad</a><br/>
+        <a href="travel-with-clarity.html">Travel with Clarity</a><br/>
+        <a href="wellness.html">Wellness journeys</a><br/>
+        <a href="free-will.html">Free basic will</a>
+      </div>
+      <div>
+        <strong>Company</strong>
+        <a href="about.html">About</a><br/>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <strong>Legal</strong>
+        <a href="#">Privacy &amp; health data</a><br/>
+        <a href="#">Terms</a><br/>
+        <a href="#">Commission disclosure</a>
+      </div>
+    </div>
+    <div class="footer-legal">
+      Borderless Health is not a medical provider and does not give medical advice. Information on this site is for guidance only and does not replace consultation with a qualified clinician. Always follow the advice of your treating medical team. Where we cannot help, we will say so.
+      <br/><br/>
+      © <span id="yr"></span> Borderless Health.
+    </div>
+  </div>
+</footer>
+
+<script>
+var destinations = [
+  {name:"Thailand",tier:"regional",flight:"~6h",cost:"££",languages:"EN · TH",note:"Strong private hospital network in Bangkok and Chiang Mai, English-speaking oncology and surgical teams, and easy recovery stays near nature.",access:{Pakistan:"arrival",India:"arrival",Bangladesh:"arrival",Nigeria:"embassy","United Kingdom":"free","United States":"free",Canada:"free",Australia:"free","United Arab Emirates":"free",Singapore:"free",Brazil:"free","South Africa":"free"},distance:6,fit:{complex:2,consult:3,genomics:2,wellness:3}},
+  {name:"United Arab Emirates",tier:"regional",flight:"~3h",cost:"£££",languages:"EN · AR · UR",note:"Close to home, direct flights, and a growing number of internationally accredited hospitals. Best suited for consultations and second opinions.",access:{Pakistan:"evisa",India:"evisa",Bangladesh:"evisa",Nigeria:"embassy","United Kingdom":"free","United States":"free",Canada:"free",Australia:"free","United Arab Emirates":"free",Singapore:"free",Brazil:"evisa","South Africa":"evisa"},residenceAccess:{"United Arab Emirates":"free"},distance:3,fit:{complex:2,consult:3,genomics:2,wellness:2}},
+  {name:"Singapore",tier:"regional",flight:"~8h",cost:"£££",languages:"EN · ZH · MS",note:"World-class specialist centres, very high English proficiency, and a strong research culture. Easier access than the UK for many passports.",access:{Pakistan:"evisa",India:"evisa",Bangladesh:"evisa",Nigeria:"embassy","United Kingdom":"free","United States":"free",Canada:"free",Australia:"free","United Arab Emirates":"free",Singapore:"free",Brazil:"free","South Africa":"free"},distance:8,fit:{complex:3,consult:3,genomics:3,wellness:2}},
+  {name:"United Kingdom",tier:"global",flight:"~10h",cost:"£££",languages:"EN + interpreters",note:"Leading cancer and surgical centres, but visa timelines and cost structure can be a barrier. Best for complex cases where the expertise is the deciding factor.",access:{Pakistan:"embassy",India:"embassy",Bangladesh:"embassy",Nigeria:"embassy","United Kingdom":"free","United States":"free",Canada:"free",Australia:"free","United Arab Emirates":"evisa",Singapore:"free",Brazil:"evisa","South Africa":"evisa"},distance:10,fit:{complex:3,consult:3,genomics:3,wellness:1}},
+  {name:"South Korea",tier:"global",flight:"~11h",cost:"££",languages:"EN · KO + interpreters",note:"Advanced oncology and surgical programs, competitive cost, and English-speaking international clinics. A strong alternative to longer-haul Western destinations.",access:{Pakistan:"evisa",India:"evisa",Bangladesh:"evisa",Nigeria:"embassy","United Kingdom":"free","United States":"free",Canada:"free",Australia:"free","United Arab Emirates":"free",Singapore:"free",Brazil:"free","South Africa":"free"},distance:11,fit:{complex:3,consult:3,genomics:2,wellness:2}},
+  {name:"Türkiye",tier:"regional",flight:"~6h",cost:"£",languages:"EN · TR",note:"Strong surgical and fertility centres in Istanbul and Ankara, English-speaking international patient teams, and a low cost tier that makes a second opinion more attainable.",access:{Pakistan:"evisa",India:"evisa",Bangladesh:"evisa",Nigeria:"embassy","United Kingdom":"free","United States":"free",Canada:"free",Australia:"evisa","United Arab Emirates":"free",Singapore:"free",Brazil:"evisa","South Africa":"free"},residenceAccess:{"United Arab Emirates":"evisa"},distance:6,fit:{complex:2,consult:3,genomics:1,wellness:2}}
+];
+var visaLabels={free:"Visa-free",arrival:"Visa on arrival",evisa:"e-Visa",embassy:"Embassy visa"};
+var visaClasses={free:"visa-free",arrival:"visa-arrival",evisa:"visa-evisa",embassy:"visa-embassy"};
+var accessRank={free:0,arrival:1,evisa:2,embassy:3};
+var currentSort="access";
+
+function getIdentity(){
+  var c=[];document.querySelectorAll('.citizenship-select').forEach(function(s){if(s.value)c.push(s.value);});
+  var r=document.getElementById('residence-select').value||(c[0]||null);
+  var care=document.getElementById('care-select').value||"complex";
+  return {citizenships:c,residence:r,careType:care};
+}
+function easiestRoute(dest,identity){
+  var best={status:"embassy",via:null,rank:99};
+  identity.citizenships.forEach(function(c){var s=dest.access[c];if(!s)return;if(accessRank[s]<best.rank){best={status:s,via:"your "+c+" passport",rank:accessRank[s]};}});
+  if(dest.residenceAccess&&identity.residence&&dest.residenceAccess[identity.residence]){var s=dest.residenceAccess[identity.residence];if(accessRank[s]<best.rank){best={status:s,via:"your residence in "+identity.residence,rank:accessRank[s]};}}
+  return best;
+}
+function renderList(){
+  var identity=getIdentity();var list=document.getElementById('passport-list');
+  if(identity.citizenships.length===0){list.innerHTML='<div class="dest-card"><p class="dest-note">Select a citizenship above to see destinations and the easiest visa route for each.</p></div>';updateSummary(identity);return;}
+  var items=destinations.map(function(d){return {dest:d,route:easiestRoute(d,identity)};});
+  if(currentSort==="access")items.sort(function(a,b){return a.route.rank-b.route.rank;});
+  else if(currentSort==="distance")items.sort(function(a,b){return a.dest.distance-b.dest.distance;});
+  else if(currentSort==="fit")items.sort(function(a,b){return (b.dest.fit[identity.careType]||0)-(a.dest.fit[identity.careType]||0);});
+  list.innerHTML=items.map(function(item){
+    var d=item.dest,r=item.route;var bc=visaClasses[r.status],bt=visaLabels[r.status];
+    var tc=d.tier,tt=d.tier==="regional"?"Regional hub":"Global hub";
+    var rl=r.via?'<div class="passport-route"><span class="via">Easiest route:</span> travel on '+r.via+' — '+bt.toLowerCase()+'.</div>':'';
+    return '<div class="dest-card"><div class="dest-top"><span class="dest-name">'+d.name+'</span><span class="dest-tier '+tc+'">'+tt+'</span></div><div class="dest-meta"><span><span class="visa-badge '+bc+'">'+bt+'</span></span><span><b>'+d.flight+'</b> flight</span><span><b>'+d.cost+'</b> cost tier</span><span><b>'+d.languages+'</b> support</span></div><p class="dest-note">'+d.note+'</p>'+rl+'</div>';
+  }).join('');
+  updateSummary(identity);
+}
+function updateSummary(identity){
+  var s=document.getElementById('identity-summary');var c=identity.citizenships;
+  if(c.length===0){s.innerHTML='<strong>How we\'ll search:</strong> we\'ll check each destination against every passport you hold and where you live, and show the easiest route for each.';return;}
+  var p=[];p.push(c.length===1?'citizen of <strong>'+c[0]+'</strong>':'citizen of <strong>'+c.join('</strong> and <strong>')+'</strong>');
+  if(identity.residence&&c.indexOf(identity.residence)===-1)p.push('resident in <strong>'+identity.residence+'</strong>');
+  s.innerHTML='<strong>How we\'ll search:</strong> we\'ll check each destination for '+p.join(', ')+' and show the easiest route for each — along with which passport gives you access.';
+}
+(function(){
+  var list=document.getElementById('citizenship-list');var addBtn=document.getElementById('add-citizenship');
+  var countries=["Pakistan","India","Bangladesh","Nigeria","United Kingdom","United States","Canada","Australia","United Arab Emirates","Singapore","Brazil","South Africa","Other"];
+  addBtn.addEventListener('click',function(){
+    var row=document.createElement('div');row.className='identity-row';
+    var sel=document.createElement('select');sel.className='citizenship-select';
+    var o=document.createElement('option');o.value='';o.textContent='Select a country';sel.appendChild(o);
+    countries.forEach(function(c){var op=document.createElement('option');op.textContent=c;sel.appendChild(op);});
+    var rm=document.createElement('button');rm.type='button';rm.className='identity-remove';rm.setAttribute('aria-label','Remove');rm.textContent='×';
+    rm.addEventListener('click',function(){row.remove();renderList();});
+    var d1=document.createElement('div');d1.appendChild(sel);
+    row.appendChild(d1);row.appendChild(document.createElement('div'));row.appendChild(rm);
+    list.appendChild(row);sel.addEventListener('change',renderList);renderList();
+  });
+})();
+document.addEventListener('change',function(e){if(e.target&&(e.target.classList.contains('citizenship-select')||e.target.id==='residence-select'||e.target.id==='care-select')){renderList();}});
+document.querySelectorAll('.sort-chip').forEach(function(chip){chip.addEventListener('click',function(){document.querySelectorAll('.sort-chip').forEach(function(c){c.classList.remove('active');});chip.classList.add('active');currentSort=chip.getAttribute('data-sort');renderList();});});
+document.getElementById('yr').textContent=new Date().getFullYear();
+renderList();
+</script>
+</body>
+</html>
