@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Care abroad — Borderless Health</title>
+<meta name="description" content="Find verified hospitals, clinicians and genomics labs worldwide. Cross-checked against official registries and enriched with patient reviews." />
+<style>
+:root{
+  --ivory:#FBF8F4; --sage:#6B8F71; --sage-dark:#5A7C60; --sage-soft:#E4EDE5;
+  --coral:#E88C7D; --coral-dark:#C96E60; --coral-soft:#FBEAE6;
+  --ink:#1F2A24; --muted:#5E6B63; --white:#FFFFFF;
+  --radius:20px; --shadow:0 8px 30px rgba(31,42,36,0.07);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--ivory);line-height:1.7;font-size:17px}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:600;line-height:1.25;color:var(--ink)}
+a{color:var(--sage);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+/* ---------- Header ---------- */
+header{background:rgba(251,248,244,0.92);backdrop-filter:blur(10px);position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(31,42,36,0.06)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:18px;padding-bottom:18px;flex-wrap:wrap;gap:12px}
+.logo{font-family:Georgia,serif;font-weight:600;font-size:1.25rem;color:var(--ink);text-decoration:none}
+.logo span{color:var(--sage)}
+nav a{color:var(--ink);margin-left:22px;font-size:.95rem;opacity:.8}
+nav a:hover{opacity:1;color:var(--sage);text-decoration:none}
+nav a.active{color:var(--sage);opacity:1;font-weight:600}
+
+/* ---------- Hero ---------- */
+.hero-small{padding:88px 0 60px;text-align:center;background:radial-gradient(circle at 15% 20%,rgba(107,143,113,0.10),transparent 45%),radial-gradient(circle at 85% 10%,rgba(232,140,125,0.10),transparent 45%),var(--ivory)}
+.hero-small h1{font-size:2.8rem;max-width:800px;margin:0 auto 18px}
+.hero-small p{font-size:1.15rem;color:var(--muted);max-width:660px;margin:0 auto}
+
+/* ---------- Sections ---------- */
+section{padding:80px 0}
+.alt{background:var(--white)}
+h2{font-size:2rem;margin-bottom:14px}
+.lead{color:var(--muted);font-size:1.08rem;max-width:720px;margin-bottom:36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.card{background:var(--white);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);border:1px solid rgba(31,42,36,0.04)}
+.alt .card{background:var(--ivory)}
+.card h3{font-size:1.25rem;margin-bottom:10px}
+.card p{color:var(--muted);font-size:.98rem}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-block;background:var(--sage);color:#fff;padding:15px 32px;border-radius:999px;font-weight:600;font-size:1rem;transition:background .2s;text-decoration:none}
+.btn:hover{background:var(--sage-dark);text-decoration:none}
+.btn-outline{background:transparent;color:var(--ink);border:1.5px solid rgba(31,42,36,0.15);margin-left:10px}
+.btn-outline:hover{background:#fff;color:var(--ink)}
+
+/* ---------- Promise ---------- */
+.promise{background:var(--ink);color:#EAF1EA;border-radius:var(--radius);padding:48px;max-width:900px;margin:0 auto;text-align:center}
+.promise h2{color:#fff;font-size:1.7rem;margin-bottom:16px}
+.promise p{color:#C6D2CA;font-size:1.05rem;max-width:680px;margin:0 auto}
+.promise strong{color:#fff}
+
+/* ---------- CTA band ---------- */
+.cta-band{text-align:center;padding:56px 0}
+
+/* ---------- Footer ---------- */
+footer{background:var(--ink);color:#A9B5AD;padding:56px 0 32px;font-size:.92rem}
+footer a{color:#C6D2CA}
+.footer-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;margin-bottom:32px}
+footer strong{color:#fff;display:block;margin-bottom:10px;font-family:Georgia,serif;font-weight:600}
+.footer-legal{border-top:1px solid rgba(255,255,255,0.08);padding-top:24px;font-size:.82rem;color:#7E8C84;line-height:1.6}
+
+/* ---------- Responsive ---------- */
+@media(max-width:640px){
+  .hero-small h1{font-size:2rem}
+  h2{font-size:1.7rem}
+  nav a{margin-left:0;margin-right:14px;font-size:.88rem}
+  .btn-outline{margin:12px 0 0}
+  .promise{padding:32px 24px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="index.html">Borderless <span>Health</span></a>
+    <nav>
+      <a href="care-abroad.html" class="active">Care abroad</a>
+      <a href="travel-with-clarity.html">Travel with Clarity</a>
+      <a href="wellness.html">Wellness</a>
+      <a href="free-will.html">Free will</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero-small">
+  <div class="wrap">
+    <h1>Care abroad, made clearer</h1>
+    <p>More choice. More options. Less noise. Find clinics, hospitals, clinicians and private genomics labs around the world — verified against official registries, and enriched with real patient experiences.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What we help with</h2>
+    <p class="lead">Whether you're seeking a second opinion, a specialist procedure, or sequencing for you or your family, the information you need is in one calm place.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Verified hospitals and clinics</h3>
+        <p>Facilities cross-referenced against national medical registries and accreditation bodies — with research background and patient reviews highlighted, so you can compare like for like.</p>
+      </div>
+      <div class="card">
+        <h3>Clinicians and specialists</h3>
+        <p>Individual clinicians checked against their relevant medical board — licence current, specialty matching, and any public restrictions disclosed. Reviews from real patients, not marketing copy.</p>
+      </div>
+      <div class="card">
+        <h3>Genomic sequencing labs</h3>
+        <p>Private labs offering consumer and patient sequencing, with plain-language explanations of what each test can and cannot tell you — aligned with approved clinical guidance.</p>
+      </div>
+      <div class="card">
+        <h3>Independent providers</h3>
+        <p>We don't only list famous Western centres. We help excellent independent providers around the world reach patients who need them — and support local economies while doing so.</p>
+      </div>
+      <div class="card">
+        <h3>Reviews that mean something</h3>
+        <p>Moderated by people, not algorithms. Reviewers confirm they received care. Providers cannot pay to remove or reorder reviews. Patterns are flagged, not single anecdotes.</p>
+      </div>
+      <div class="card">
+        <h3>Language support</h3>
+        <p>Every provider listing shows the languages spoken by the clinical team, and whether interpreters are available. Language is a barrier we take seriously.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>How we verify</h2>
+    <p class="lead">Every provider goes through the same four checks before listing. We re-verify on a schedule, and immediately if we become aware of a change.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>1. Registry check</h3>
+        <p>GMC, state medical boards, or the relevant national authority. Licence current, specialty matching, no undisclosed restrictions.</p>
+      </div>
+      <div class="card">
+        <h3>2. Credentials and research</h3>
+        <p>Qualifications, fellowships and research activity checked against institutional pages and, where available, peer-reviewed publications.</p>
+      </div>
+      <div class="card">
+        <h3>3. Facility standing</h3>
+        <p>Accreditation against JCI, ISO 15189 (for labs) or national equivalents. We review whether the facility publicly reports its outcomes.</p>
+      </div>
+      <div class="card">
+        <h3>4. Patient experience</h3>
+        <p>Patient reviews and testimonials, moderated by people. We flag patterns, disclose the good and the difficult alike, and never allow a provider to edit reviews.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="promise">
+      <h2>Grounded in approved guidelines</h2>
+      <p>Where we publish information about conditions, tests or treatments, we align it with approved clinical guidance from recognised bodies — <strong>NICE</strong> (UK), <strong>FDA</strong> (USA), <strong>EMA</strong> (EU), <strong>WHO</strong> and national regulators. We link to the source so you can read it yourself. We do not offer our own medical opinion, and we will never advise against the advice of your treating clinicians.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap cta-band">
+    <h2>Ready to plan?</h2>
+    <p class="lead" style="margin:0 auto 32px">Use Travel with Clarity to see where you can go, and how easily. Or tell us what you're looking for and we'll help honestly.</p>
+    <a class="btn" href="travel-with-clarity.html">Plan your journey</a>
+    <a class="btn btn-outline" href="contact.html">Talk to us</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-cols">
+      <div>
+        <div class="logo" style="color:#fff">Borderless <span style="color:#A5C4AB">Health</span></div>
+        <p style="margin-top:8px">Calm, verified care, wherever you are.</p>
+      </div>
+      <div>
+        <strong>Services</strong>
+        <a href="care-abroad.html">Care abroad</a><br/>
+        <a href="travel-with-clarity.html">Travel with Clarity</a><br/>
+        <a href="wellness.html">Wellness journeys</a><br/>
+        <a href="free-will.html">Free basic will</a>
+      </div>
+      <div>
+        <strong>Company</strong>
+        <a href="about.html">About</a><br/>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <strong>Legal</strong>
+        <a href="#">Privacy &amp; health data</a><br/>
+        <a href="#">Terms</a><br/>
+        <a href="#">Commission disclosure</a>
+      </div>
+    </div>
+    <div class="footer-legal">
+      Borderless Health is not a medical provider and does not give medical advice. Information on this site is for guidance only and does not replace consultation with a qualified clinician. Always follow the advice of your treating medical team. Where we cannot help, we will say so.
+      <br/><br/>
+      © <span id="yr"></span> Borderless Health.
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
