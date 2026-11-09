@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Borderless Health — Verified care, wherever you are</title>
-<meta name="description" content="Find verified hospitals, clinicians and genomic labs worldwide. Plan travel with Travel with Clarity. Wellness journeys, a free basic will, and honest guidance." />
+<meta name="description" content="Find verified hospitals, clinicians and genomic labs worldwide. Match to clinical trials. Plan travel with clarity. Wellness journeys, a free basic will, and honest guidance." />
 <style>
 :root{
   --ivory:#FBF8F4; --sage:#6B8F71; --sage-dark:#5A7C60; --sage-soft:#E4EDE5;
@@ -20,7 +20,6 @@ a{color:var(--sage);text-decoration:none}
 a:hover{text-decoration:underline}
 .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
 
-/* ---------- Header ---------- */
 header{background:rgba(251,248,244,0.92);backdrop-filter:blur(10px);position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(31,42,36,0.06)}
 header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:18px;padding-bottom:18px;flex-wrap:wrap;gap:12px}
 .logo{font-family:Georgia,serif;font-weight:600;font-size:1.25rem;color:var(--ink);text-decoration:none}
@@ -29,7 +28,6 @@ nav a{color:var(--ink);margin-left:22px;font-size:.95rem;opacity:.8}
 nav a:hover{opacity:1;color:var(--sage);text-decoration:none}
 nav a.active{color:var(--sage);opacity:1;font-weight:600}
 
-/* ---------- Hero ---------- */
 .hero-visual{position:relative;overflow:hidden;padding:130px 0 120px;text-align:center;background:var(--ivory)}
 .hero-visual-bg{position:absolute;inset:0;z-index:0;pointer-events:none}
 .borderless-svg{width:100%;height:100%;display:block;object-fit:cover}
@@ -39,23 +37,19 @@ nav a.active{color:var(--sage);opacity:1;font-weight:600}
 .hero-visual p{font-size:1.25rem;color:var(--muted);max-width:660px;margin:0 auto 36px}
 .hero-visual::after{content:"";position:absolute;left:0;right:0;bottom:0;height:80px;background:linear-gradient(to bottom, rgba(251,248,244,0), var(--ivory));z-index:1;pointer-events:none}
 
-/* ---------- Buttons ---------- */
 .btn{display:inline-block;background:var(--sage);color:#fff;padding:15px 32px;border-radius:999px;font-weight:600;font-size:1rem;transition:background .2s;text-decoration:none}
 .btn:hover{background:var(--sage-dark);text-decoration:none}
 .btn-outline{background:transparent;color:var(--ink);border:1.5px solid rgba(31,42,36,0.15);margin-left:10px}
 .btn-outline:hover{background:#fff;color:var(--ink)}
 
-/* ---------- Reassurance strip ---------- */
 .reassure{background:var(--sage-soft);padding:22px 0;font-size:.95rem;color:#41574A;text-align:center}
 .reassure .wrap{display:flex;justify-content:center;gap:32px;flex-wrap:wrap}
 
-/* ---------- Sections ---------- */
 section{padding:80px 0}
 .alt{background:var(--white)}
 h2{font-size:2.1rem;margin-bottom:14px}
 .lead{color:var(--muted);font-size:1.1rem;max-width:720px;margin-bottom:44px}
 
-/* ---------- Signpost cards ---------- */
 .signpost-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
 .signpost{background:var(--white);border-radius:var(--radius);padding:36px 32px;box-shadow:var(--shadow);border:1px solid rgba(31,42,36,0.04);text-decoration:none;color:var(--ink);transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
 .alt .signpost{background:var(--ivory)}
@@ -65,24 +59,20 @@ h2{font-size:2.1rem;margin-bottom:14px}
 .signpost p{color:var(--muted);font-size:.98rem;flex:1;margin-bottom:18px}
 .signpost .arrow{color:var(--sage);font-weight:600;font-size:.9rem}
 
-/* ---------- Quote ---------- */
 .quote{background:linear-gradient(135deg,var(--sage-soft),var(--ivory));border-left:4px solid var(--sage);padding:36px 40px;border-radius:var(--radius);max-width:820px;margin:0 auto;font-family:Georgia,serif;font-size:1.2rem;color:var(--ink);line-height:1.6}
 .quote small{display:block;margin-top:14px;font-family:system-ui,sans-serif;font-size:.9rem;color:var(--muted)}
 
-/* ---------- Promise ---------- */
 .promise{background:var(--ink);color:#EAF1EA;border-radius:var(--radius);padding:48px;max-width:900px;margin:0 auto;text-align:center}
 .promise h2{color:#fff;font-size:1.7rem;margin-bottom:16px}
 .promise p{color:#C6D2CA;font-size:1.05rem;max-width:680px;margin:0 auto}
 .promise strong{color:#fff}
 
-/* ---------- Footer ---------- */
 footer{background:var(--ink);color:#A9B5AD;padding:56px 0 32px;font-size:.92rem}
 footer a{color:#C6D2CA}
 .footer-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;margin-bottom:32px}
 footer strong{color:#fff;display:block;margin-bottom:10px;font-family:Georgia,serif;font-weight:600}
 .footer-legal{border-top:1px solid rgba(255,255,255,0.08);padding-top:24px;font-size:.82rem;color:#7E8C84;line-height:1.6}
 
-/* ---------- Responsive ---------- */
 @media(max-width:640px){
   .hero-visual{padding:90px 0 80px}
   .hero-visual h1{font-size:2.2rem}
@@ -103,9 +93,8 @@ footer strong{color:#fff;display:block;margin-bottom:10px;font-family:Georgia,se
     <nav>
       <a href="care-abroad.html">Care abroad</a>
       <a href="travel-with-clarity.html">Travel with Clarity</a>
-      <a href="wellness.html">Wellness</a>
       <a href="clinical-trial-match.html">Clinical Trial Match</a>
-      <a href="free-will.html">Free will</a>
+      <a href="wellness.html">Wellness</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -163,9 +152,9 @@ footer strong{color:#fff;display:block;margin-bottom:10px;font-family:Georgia,se
   <div class="wrap hero-content">
     <span class="eyebrow">Calm, verified, honest guidance</span>
     <h1>World-class care.<br>No borders in the way.</h1>
-    <p>Find verified hospitals, clinicians and genomic labs around the world — and the easiest route to reach them. We help you travel, recover, and plan, without the admin weighing you down.</p>
-    <a class="btn" href="travel-with-clarity.html">Plan your journey</a>
-    <a class="btn btn-outline" href="care-abroad.html">See how we verify</a>
+    <p>Find verified hospitals, clinicians and genomic labs around the world — match to clinical trials, and plan the easiest route to reach them. We help you travel, recover, and plan, without the admin weighing you down.</p>
+    <a class="btn" href="care-abroad.html">Explore care abroad</a>
+    <a class="btn btn-outline" href="clinical-trial-match.html">Match to a trial</a>
   </div>
 </section>
 
@@ -180,7 +169,7 @@ footer strong{color:#fff;display:block;margin-bottom:10px;font-family:Georgia,se
 <section>
   <div class="wrap">
     <h2>What we do</h2>
-    <p class="lead">Five services, one purpose: to make seeking care or recovery abroad clearer, calmer and more honest. Choose where you'd like to begin.</p>
+    <p class="lead">Six services, one purpose: to make seeking care or recovery abroad clearer, calmer and more honest. Choose where you'd like to begin.</p>
     <div class="signpost-grid">
       <a class="signpost" href="care-abroad.html">
         <div class="signpost-icon">🏥</div>
@@ -188,10 +177,16 @@ footer strong{color:#fff;display:block;margin-bottom:10px;font-family:Georgia,se
         <p>Find hospitals, clinicians and genomics labs worldwide — verified against official registries, with patient reviews you can trust.</p>
         <span class="arrow">Explore care abroad →</span>
       </a>
+      <a class="signpost" href="clinical-trial-match.html">
+        <div class="signpost-icon">🔬</div>
+        <h3>Clinical Trial Match</h3>
+        <p>A free search engine that matches you to eligible clinical trials — using your own words. You don't need a complete molecular pathology report.</p>
+        <span class="arrow">Match to a trial →</span>
+      </a>
       <a class="signpost" href="travel-with-clarity.html">
         <div class="signpost-icon">🧭</div>
         <h3>Travel with Clarity</h3>
-        <p>Honest, practical guidance on getting to your destination — visa rules, language support, and regional and global hubs side by side. We help with the process, without the hassle.</p>
+        <p>Honest, practical guidance on getting to your destination — visa rules, language support, and regional and global hubs side by side.</p>
         <span class="arrow">Plan your journey →</span>
       </a>
       <a class="signpost" href="wellness.html">
@@ -205,12 +200,6 @@ footer strong{color:#fff;display:block;margin-bottom:10px;font-family:Georgia,se
         <h3>A free basic will</h3>
         <p>Protecting what matters shouldn't cost anything to begin. Our free basic will service helps you take the first step.</p>
         <span class="arrow">Start your free will →</span>
-      </a>
-      <a class="signpost" href="about.html">
-        <div class="signpost-icon">💬</div>
-        <h3>Why we exist</h3>
-        <p>Founded by two co-founders who combine clinical science with platform and search expertise. This is the company we wished had existed for us.</p>
-        <span class="arrow">Read our story →</span>
       </a>
       <a class="signpost" href="contact.html">
         <div class="signpost-icon">✉️</div>
@@ -250,6 +239,7 @@ footer strong{color:#fff;display:block;margin-bottom:10px;font-family:Georgia,se
       <div>
         <strong>Services</strong>
         <a href="care-abroad.html">Care abroad</a><br/>
+        <a href="clinical-trial-match.html">Clinical Trial Match</a><br/>
         <a href="travel-with-clarity.html">Travel with Clarity</a><br/>
         <a href="wellness.html">Wellness journeys</a><br/>
         <a href="free-will.html">Free basic will</a>
