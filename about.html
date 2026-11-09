@@ -4,12 +4,12 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>About — Borderless Health</title>
-<meta name="description" content="Borderless Health helps patients find verified care abroad. Founded by a biomarker bioinformatics scientist and a platform specialist, we combine clinical rigour with practical access." />
+<meta name="description" content="Borderless Health helps patients find verified care abroad, match to clinical trials, and plan travel with clarity. Founded by two people who have been through cancer treatment." />
 <style>
 :root{--ivory:#FBF8F4;--sage:#6B8F71;--sage-dark:#5A7C60;--sage-soft:#E4EDE5;--coral:#E88C7D;--coral-dark:#C96E60;--coral-soft:#FBEAE6;--ink:#1F2A24;--muted:#5E6B63;--white:#FFFFFF;--radius:20px;--shadow:0 8px 30px rgba(31,42,36,0.07)}
 *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
 body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--ivory);line-height:1.7;font-size:17px}
-h1,h2,h3,h4{font-family:Georgia,"Times New Roman",serif;font-weight:600;line-height:1.25;color:var(--ink)}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:600;line-height:1.25;color:var(--ink)}
 a{color:var(--sage);text-decoration:none}a:hover{text-decoration:underline}
 .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
 .wrap.narrow{max-width:780px}
@@ -21,22 +21,16 @@ nav a{color:var(--ink);margin-left:22px;font-size:.95rem;opacity:.8}nav a:hover{
 .hero-small h1{font-size:2.8rem;max-width:860px;margin:0 auto 18px}
 .hero-small p{font-size:1.15rem;color:var(--muted);max-width:680px;margin:0 auto}
 section{padding:80px 0}.alt{background:var(--white)}
-h2{font-size:2rem;margin-bottom:14px}h3{font-size:1.3rem;margin-bottom:10px}
+h2{font-size:2rem;margin-bottom:14px}
 .lead{color:var(--muted);font-size:1.08rem;max-width:720px;margin-bottom:32px}
 .wrap.narrow p{margin-bottom:18px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
 .card{background:var(--white);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);border:1px solid rgba(31,42,36,0.04)}
 .alt .card{background:var(--ivory)}
-.card p{color:var(--muted);font-size:.98rem}
+.card h3{font-size:1.25rem;margin-bottom:10px}.card p{color:var(--muted);font-size:.98rem}
 
-.founders-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
-.founder{background:var(--white);border-radius:var(--radius);padding:36px;box-shadow:var(--shadow);border:1px solid rgba(31,42,36,0.04)}
-.founder h3{font-size:1.35rem;margin-bottom:4px}
-.founder .role{font-size:.88rem;color:var(--coral-dark);font-weight:600;text-transform:uppercase;letter-spacing:.4px;margin-bottom:6px}
-.founder .location{font-size:.88rem;color:var(--muted);margin-bottom:20px}
-.founder p{color:var(--ink);font-size:.98rem;margin-bottom:14px;line-height:1.7}
-.founder .credentials{margin-top:20px;padding-top:18px;border-top:1px dashed rgba(31,42,36,0.12);font-size:.85rem;color:var(--muted);line-height:1.6}
-.founder .credentials strong{color:var(--ink)}
+.quote{background:linear-gradient(135deg,var(--sage-soft),var(--ivory));border-left:4px solid var(--sage);padding:36px 40px;border-radius:var(--radius);max-width:820px;margin:0 auto;font-family:Georgia,serif;font-size:1.2rem;color:var(--ink);line-height:1.6}
+.quote small{display:block;margin-top:14px;font-family:system-ui,sans-serif;font-size:.9rem;color:var(--muted)}
 
 .promise{background:var(--ink);color:#EAF1EA;border-radius:var(--radius);padding:48px;max-width:900px;margin:0 auto;text-align:center}
 .promise h2{color:#fff;font-size:1.7rem;margin-bottom:16px}.promise p{color:#C6D2CA;font-size:1.05rem;max-width:680px;margin:0 auto}.promise strong{color:#fff}
@@ -52,19 +46,19 @@ footer{background:var(--ink);color:#A9B5AD;padding:56px 0 32px;font-size:.92rem}
 footer strong{color:#fff;display:block;margin-bottom:10px;font-family:Georgia,serif;font-weight:600}
 .footer-legal{border-top:1px solid rgba(255,255,255,0.08);padding-top:24px;font-size:.82rem;color:#7E8C84;line-height:1.6}
 
-@media(max-width:860px){.founders-grid{grid-template-columns:1fr}}
-@media(max-width:640px){.hero-small h1{font-size:2rem}h2{font-size:1.7rem}nav a{margin-left:0;margin-right:14px;font-size:.88rem}.btn-outline{margin:12px 0 0}.promise{padding:32px 24px}.founder{padding:28px 24px}}
+@media(max-width:640px){.hero-small h1{font-size:2rem}h2{font-size:1.7rem}nav a{margin-left:0;margin-right:14px;font-size:.88rem}.btn-outline{margin:12px 0 0}.promise{padding:32px 24px}.quote{padding:28px 24px}}
 </style>
 </head>
 <body>
+
 <header>
   <div class="wrap">
     <a class="logo" href="index.html">Borderless <span>Health</span></a>
     <nav>
       <a href="care-abroad.html">Care abroad</a>
-      <a href="care-passport.html">Care Passport</a>
+      <a href="travel-with-clarity.html">Travel with Clarity</a>
+      <a href="clinical-trial-match.html">Clinical Trial Match</a>
       <a href="wellness.html">Wellness</a>
-      <a href="free-will.html">Free will</a>
       <a href="about.html" class="active">About</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -73,46 +67,26 @@ footer strong{color:#fff;display:block;margin-bottom:10px;font-family:Georgia,se
 
 <section class="hero-small">
   <div class="wrap">
-    <h1>About Borderless Health</h1>
-    <p>We help patients and consumers find verified healthcare abroad — and we make the path to it clearer, calmer and more honest.</p>
+    <h1>Care shouldn't stop at a border.</h1>
+    <p>Borderless Health was founded by two people who have been through cancer treatment — and who know how much stands between a patient and the care they need.</p>
   </div>
 </section>
 
 <section>
   <div class="wrap narrow">
     <h2>Why we exist</h2>
-    <p class="lead">Seeking care abroad is often harder than it needs to be. The information is scattered. The quality of providers is hard to verify. Visa rules, language and cost vary from country to country. And the burden of piecing it all together falls on the patient — usually at a time when they have the least energy to spare.</p>
-    <p>Borderless Health exists to remove that burden. We verify providers against official medical registries. We surface patient reviews that mean something. We map visa access, language support and regional hubs so patients can see their real options. And we ground everything we publish in approved clinical guidance, because empowerment should be built on evidence, not opinion.</p>
+    <p class="lead">We have been patients in the UK and the USA. We have seen how differently two excellent health systems can feel from the inside — and how much of the hardest work falls not on the doctors, but on the patient.</p>
+    <p>The searching. The waiting. The referrals that go nowhere. The forms, the phone calls, the second-guessing at 2am. The realisation that the care you need might exist, but it is on the other side of a border you were not prepared to negotiate.</p>
+    <p>We built Borderless Health because nobody should have to do that work while they are unwell. Our purpose is simple: to make care across borders clearer, calmer and more honest — so that patients and their families can spend their energy where it matters most.</p>
   </div>
 </section>
 
 <section class="alt">
   <div class="wrap">
-    <h2>Founders</h2>
-    <p class="lead">Borderless Health is led by two co-founders whose backgrounds combine clinical science with platform and search expertise.</p>
-    <div class="founders-grid">
-      <div class="founder">
-        <div class="role">Co-founder · Science &amp; clinical guidance</div>
-        <h3>Samrina Rehman, PhD, EMBA</h3>
-        <div class="location">Greater Manchester, United Kingdom</div>
-        <p>Samrina is a biomarker bioinformatics data scientist with over fifteen years' experience across life sciences, drug discovery and translational medicine. She has held research and scientific roles at The University of Manchester, Evotec, Inpharmatica, and the Medicines Discovery Catapult, leading data-driven research in immuno-oncology, pain, motor neurone disease and multiple sclerosis. She holds a PhD in Systems Biology from The University of Manchester and an Executive MBA.</p>
-        <p>At Borderless Health she leads clinical evidence, provider verification methodology, the mapping of approved clinical guidelines, and the design of the second-opinion service.</p>
-        <div class="credentials">
-          <strong>Focus:</strong> Clinical evidence, approved-guideline mapping, second-opinion portal, provider verification.
-        </div>
-      </div>
-
-      <div class="founder">
-        <div class="role">Co-founder · Product, platform &amp; reach</div>
-        <h3>Bohyeon An</h3>
-        <div class="location">San Francisco, California, USA</div>
-        <p>Bohyeon is an SEO specialist and full-stack developer, currently at Yoit (Data Monsters Inc.) in San Francisco. She studied Business Information Systems at Keimyung University in South Korea and completed a full-stack web development certification at UC Berkeley Extension. She has co-founded and built products from the ground up, and brings deep experience in search, discovery and platform architecture to Borderless Health.</p>
-        <p>At Borderless Health she leads the platform and search architecture, multilingual access, the Care Passport user experience, and partner integrations.</p>
-        <div class="credentials">
-          <strong>Focus:</strong> Platform and search architecture, multilingual access, Care Passport, partner integrations.
-        </div>
-      </div>
-    </div>
+    <blockquote class="quote">
+      "We built what we wished had existed when we needed it. If it spares even one person the worst parts of what we went through, it will have been worth it."
+      <small>— The founders of Borderless Health</small>
+    </blockquote>
   </div>
 </section>
 
@@ -123,19 +97,19 @@ footer strong{color:#fff;display:block;margin-bottom:10px;font-family:Georgia,se
     <div class="grid">
       <div class="card">
         <h3>Your doctor comes first. Always.</h3>
-        <p>We are not a medical provider and we do not give medical advice. Every decision about your care belongs with you and your treating clinicians. Our job is to make information clearer — never to override clinical judgement.</p>
+        <p>We are not a medical provider and we do not give medical advice. Every decision about your care belongs with you and your treating clinicians.</p>
       </div>
       <div class="card">
         <h3>Honesty, even when it costs us.</h3>
-        <p>If we can't help, we'll say so. If a provider isn't a good fit, we'll say so. If a partner pays us a commission, we'll disclose it. Trust is the only currency that matters in health.</p>
+        <p>If we can't help, we'll say so. If a provider isn't a good fit, we'll say so. If a partner pays us a commission, we'll disclose it.</p>
       </div>
       <div class="card">
         <h3>Grounded in approved guidelines.</h3>
-        <p>We align our information with approved clinical guidance from recognised bodies — NICE, FDA, EMA, WHO and national regulators — so that what you read reflects established practice, not opinion.</p>
+        <p>We align our information with approved clinical guidance from recognised bodies — NICE, FDA, EMA, WHO and national regulators.</p>
       </div>
       <div class="card">
         <h3>Choice for everyone, everywhere.</h3>
-        <p>Access to excellent care shouldn't depend on where you were born, where you live, or what passport you hold. We help patients explore options across borders, and we help independent providers and local economies benefit from that choice.</p>
+        <p>Access to excellent care shouldn't depend on where you were born, where you live, or what passport you hold.</p>
       </div>
     </div>
   </div>
@@ -144,30 +118,35 @@ footer strong{color:#fff;display:block;margin-bottom:10px;font-family:Georgia,se
 <section class="alt">
   <div class="wrap narrow">
     <h2>Our services</h2>
+    <p class="lead">Everything we offer is built around the same question: what would have helped us, at the moment we needed it most?</p>
     <div class="grid" style="grid-template-columns:1fr">
       <div class="card">
         <h3>Verified care abroad</h3>
         <p>Hospitals, clinicians and genomics labs around the world — checked against official registries, enriched with patient reviews, and shown alongside the languages spoken by the clinical team.</p>
       </div>
       <div class="card">
-        <h3>Care Passport</h3>
-        <p>An interactive tool that shows patients where they can travel for care, based on their citizenship(s) and country of residence — with the easiest visa route for each destination and both regional and global hubs side by side.</p>
+        <h3>Clinical Trial Match</h3>
+        <p>A free search engine that matches patients to eligible clinical trials using their own words — and shows what to obtain next, in order of leverage.</p>
+      </div>
+      <div class="card">
+        <h3>Travel with Clarity</h3>
+        <p>Honest, practical guidance on getting to your destination. We help patients understand visa requirements based on their citizenship(s) and country of residence, compare regional and global hubs, and navigate the process with less hassle.</p>
       </div>
       <div class="card">
         <h3>Regional guidelines, by condition</h3>
-        <p>How a specific condition is treated in different countries, drawn from approved clinical guidance — so patients can compare approaches with their treating clinician, rather than relying on fragments of information online.</p>
+        <p>How a specific condition is treated in different countries, drawn from approved clinical guidance — so patients can compare approaches with their treating clinician.</p>
       </div>
       <div class="card">
         <h3>Second opinion portal <span style="font-size:.8rem;color:var(--coral-dark);font-weight:600;text-transform:uppercase;letter-spacing:.4px;margin-left:6px">In development</span></h3>
-        <p>A structured way for patients to seek a second opinion from a verified specialist abroad, with clinical information handled carefully and the advice returned to the patient and their treating team.</p>
+        <p>A structured way for patients to seek a second opinion from a verified specialist abroad, with clinical information handled carefully.</p>
       </div>
       <div class="card">
         <h3>Wellness journeys</h3>
-        <p>Nature-based retreats chosen for genuine restorative value — designed to support physical and mental wellbeing, and to support the local communities in which they operate.</p>
+        <p>Nature-based retreats chosen for genuine restorative value — designed to support physical and mental wellbeing.</p>
       </div>
       <div class="card">
         <h3>A free basic will</h3>
-        <p>A free basic will-writing service, so that planning ahead doesn't have to start with cost. Advanced services are available through vetted partners, with clear disclosure of how we work with them.</p>
+        <p>A free basic will-writing service, so that planning ahead doesn't have to start with cost.</p>
       </div>
     </div>
   </div>
@@ -177,7 +156,7 @@ footer strong{color:#fff;display:block;margin-bottom:10px;font-family:Georgia,se
   <div class="wrap">
     <div class="promise">
       <h2>What we are — and what we are not</h2>
-      <p><strong>We are</strong> a verified directory of hospitals, clinics, clinicians and genomics labs; a source of patient reviews and approved-guideline information; a second-opinion service in development; a wellness travel partner; and a starting point for basic estate planning.<br><br><strong>We are not</strong> a medical provider, a diagnostic service, or a substitute for your treating clinicians. We will never advise against medical advice. We will never sell your health information. And where we cannot help, we will say so.</p>
+      <p><strong>We are</strong> a verified directory of hospitals, clinics, clinicians and genomics labs; a source of patient reviews and approved-guideline information; a clinical trial matcher; a second-opinion service in development; a wellness travel partner; and a starting point for basic estate planning.<br><br><strong>We are not</strong> a medical provider, a diagnostic service, or a substitute for your treating clinicians. We will never advise against medical advice. We will never sell your health information. And where we cannot help, we will say so.</p>
     </div>
   </div>
 </section>
@@ -201,7 +180,8 @@ footer strong{color:#fff;display:block;margin-bottom:10px;font-family:Georgia,se
       <div>
         <strong>Services</strong>
         <a href="care-abroad.html">Care abroad</a><br/>
-        <a href="care-passport.html">Care Passport</a><br/>
+        <a href="clinical-trial-match.html">Clinical Trial Match</a><br/>
+        <a href="travel-with-clarity.html">Travel with Clarity</a><br/>
         <a href="wellness.html">Wellness journeys</a><br/>
         <a href="free-will.html">Free basic will</a>
       </div>
